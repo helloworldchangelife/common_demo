@@ -3,7 +3,7 @@
 	> Author      : wangyifei
 	> Mail        : wangyufei.coder@gmail.com 
 	> Created Time: Thu 21 Dec 2017 03:12:11 AM EST
-    > Platform    : Linux Centos
+	> PlatFrom    : Linux Centos
  ************************************************************************/
 //声明：转载于(http://cooker.iteye.com/blog/777455)
 // 用来读写配置文件的 Config 类

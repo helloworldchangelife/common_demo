@@ -3,7 +3,7 @@
 	> Author      : wangyifei
 	> Mail        : wangyufei.coder@gmail.com 
 	> Created Time: Thu 21 Dec 2017 03:13:14 AM EST
-    > Platform    : Linux Centos
+	> Platform    : Linux Centos
 	> Function    : 读写配置文件的通用工具
  ************************************************************************/
 

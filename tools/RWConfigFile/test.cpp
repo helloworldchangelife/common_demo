@@ -3,7 +3,7 @@
 	> Author      : wangyifei
 	> Mail        : wangyufei.coder@gmail.com 
 	> Created Time: Thu 21 Dec 2017 03:13:29 AM EST
-    > Platform    : Linux Centos
+	> Platform    : Linux Centos
  ************************************************************************/
 //写入文件的用法(实例)
 #include <iostream>
