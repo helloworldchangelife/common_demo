@@ -10,10 +10,6 @@ test.o: test.cpp config.h
 config.o: config.cpp config.h
 	$(CC) $(CFLAGS) config.cpp
 
-SUBDIR = $(shell ls ./ -R | grep /)
-SUBDIRS = $(subst :,/,$(SUBDIR))
-SOURCE = $(foreach dir, $(SUBDIRS),$(wildcard $(dir)*.o))
-
 .PHONY:
 clean:
-	rm -rf $(SOURCE)
+	rm -f *.o test
