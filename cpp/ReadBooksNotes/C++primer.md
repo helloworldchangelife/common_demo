@@ -1,7 +1,7 @@
 ### 第二章 （2.3）复合类型
 ##### 引用和指针：
 - 下面代码会输出什么（知识点：引用）
-```
+```cpp
 #include <iostream>
 using namespace std;
 int i, &r = i;
