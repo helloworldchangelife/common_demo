@@ -31,16 +31,3 @@
 *.out
 *.app
 
-#program language
-* .cpp linguist-language=cpp
-*.h linguist-language=c/cpp
-*.hpp linguist-language=cpp
-*.c linguist-language=c
-
-*.css linguist-language=html
-*.js linguist-language=html
-*.less linguist-language=html
-*.html linguist-language=html
-
-*.py linguist-language=python
-*.php linguist-language=php
