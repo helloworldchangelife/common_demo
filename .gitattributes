@@ -1,10 +1,10 @@
 #program language
 
 #cpp
-* .cpp linguist-language=cpp
-*.h linguist-language=c/cpp
-*.hpp linguist-language=cpp
-*.c linguist-language=c
+* .cpp linguist-language=C++
+*.h linguist-language=C/C++
+*.hpp linguist-language=C++
+*.c linguist-language=C
 #html
 *.css linguist-language=html
 *.js linguist-language=html
