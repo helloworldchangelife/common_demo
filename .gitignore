@@ -32,7 +32,7 @@
 *.app
 
 #program language
-*.cpp linguist-language=cpp
+* .cpp linguist-language=cpp
 *.h linguist-language=c/cpp
 *.hpp linguist-language=cpp
 *.c linguist-language=c
