@@ -12,4 +12,4 @@
 #python
 *.py linguist-language=python
 #java
-*.java linhuist-language=java
+*.java linguist-language=java
