@@ -15,4 +15,4 @@
 #php
 *.php linguist-language=php
 #java
-*.java linhuist-language=java
+*.java linguist-language=java
