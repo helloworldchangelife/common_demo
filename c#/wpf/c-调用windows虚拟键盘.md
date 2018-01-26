@@ -1,4 +1,3 @@
-
 调用windows自带的tabtip.exe来调用虚拟键盘。
 
 我们在textBox获取焦点时候进行调用虚拟键盘
