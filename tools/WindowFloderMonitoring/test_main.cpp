@@ -1,4 +1,4 @@
-//使用方法
+//浣跨敤
 #include "stdafx.h"
 #include "WindowFloderMonitoring.h"
 #include <stdio.h>
@@ -38,7 +38,7 @@ void __stdcall MyDeal( CFloderMonitoring::ACTION act, LPCWSTR file_name, LPVOID 
 
 int main()
 {
- LPCTSTR sDir= TEXT("E:\\work"); //监控的目录
+ LPCTSTR sDir= TEXT("E:\\work"); //鐩戞帶鐩綍
  DWORD dwNotifyFilter = CFloderMonitoring::FILTER_FILE_NAME|CFloderMonitoring::FILTER_DIR_NAME;
 
  CFloderMonitoring flodermonitor;
