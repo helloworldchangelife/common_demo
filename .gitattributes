@@ -8,11 +8,8 @@
 #html
 *.css linguist-language=html
 *.js linguist-language=html
-*.less linguist-language=html
 *.html linguist-language=html
 #python
 *.py linguist-language=python
-#php
-*.php linguist-language=php
 #java
 *.java linguist-language=java
