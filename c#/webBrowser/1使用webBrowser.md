@@ -1,8 +1,8 @@
-### wpf webBrowser控件
-#### 介绍
+## wpf webBrowser控件
+### 介绍
 WebBrowsers可以让我们在窗体中进行导航网页。
 WebBrowser控件内部使用ie的引擎，因此使用WebBrowser我们必须安装ie浏览器（windows默认安装的）。
-#### 使用
+### 使用
 直接在xmal中使用webBrowser控件
 ```xml
 <WebBrowser x:Name="WebBrowser1" Source ="xxx.com"></WebBrowser>
@@ -23,8 +23,8 @@ WebBrowser控件内部使用ie的引擎，因此使用WebBrowser我们必须安�
 `Navigated`| 导航之后，在下载web页面之前引发|` WebBrowser1.Navigated += (sender, args) =>{Console.WriteLine("ed" + args?.Uri);};`
 `LoadCompleteed`|当web页面下载完成时引发这个事件，这时可以处理网页|`WebBrowser1.LoadCompleted += (sender, args)=>{Console.WriteLine(WebBrowser1.Document);};`
 
-#### 问题
-- js报错
+###  问题
+- **js报错**
 默认情况下webBrowser用的是比较低的ie内核，这样如果访问的网页有不支持的脚本或者其他问题，就会没有办法正常运行，比如报错 javaScript错误。
     - 避免报错不弹提示框。
     ```cs
@@ -109,10 +109,11 @@ WebBrowser控件内部使用ie的引擎，因此使用WebBrowser我们必须安�
     ```html
     <meta http-equiv="X-UA-Compatible" content="edge" />
     ```
-- 内存泄漏
+- **内存泄漏**
 [Memory leak when using WPF WebBrowser control in multiple windows
 ](https://stackoverflow.com/questions/8302933/how-to-get-around-the-memory-leak-in-the-net-webbrowser-control)
-内存泄漏的解决方式
+
+    内存泄漏的解决方式
     - 不使用wpf中的 WebBrowser
     - 将WebBrowser放到子进程中，每次开关都会重新分配内存
     - 删除掉所有引用，来清理内存泄漏。关闭窗口时调用下面代码。
