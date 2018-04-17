@@ -1,4 +1,4 @@
-## wpf webBrowser控件
+v## wpf webBrowser控件
 ### 介绍
 WebBrowsers可以让我们在窗体中进行导航网页。
 WebBrowser控件内部使用ie的引擎，因此使用WebBrowser我们必须安装ie浏览器（windows默认安装的）。
@@ -27,12 +27,14 @@ WebBrowser控件内部使用ie的引擎，因此使用WebBrowser我们必须安�
 - **js报错**
 默认情况下webBrowser用的是比较低的ie内核，这样如果访问的网页有不支持的脚本或者其他问题，就会没有办法正常运行，比如报错 javaScript错误。
     - 避免报错不弹提示框。
+   
     ```cs
     WebBrowser1.Navigated += (sender, args) =>
     {
          SetSilent(wbMain, true)
     }   
     ```
+
     ```cs
     public static void SetSilent(WebBrowser browser, bool silent)
     {
@@ -61,8 +63,8 @@ WebBrowser控件内部使用ie的引擎，因此使用WebBrowser我们必须安�
         int QueryService([In] ref Guid guidService, [In] ref Guid riid, [MarshalAs(UnmanagedType.IDispatch)] out object ppvObject);
     }
     ```
-    这种只是让它不出现报错窗口，不能从根本上解决。
-    - 修改注册表使用新的ie内核,下面是代码：
+- **渲染问题** webbrowser中的ie版本低，不支持像h5中的video这种新标签，所以我们可以设置其版本。
+
     ```cs
      static void SetWebBrowserFeatures(int ieVersion)
         {
