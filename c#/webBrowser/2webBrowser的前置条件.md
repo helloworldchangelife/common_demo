@@ -1,5 +1,5 @@
 ### WebBrowser渲染
-如下图其中 ShDocVw 及以下就是WebBrowser的内容，Browser UI不属于WebBrowser。
+如下图（同级目录的ie.png）其中 ShDocVw 及以下就是WebBrowser的内容，Browser UI不属于WebBrowser。
 @import "ie.png"
 不少软件都内嵌了IE的WebBrowser控件（也就是MSHTML.dll）来显示网页， 当用户机器升级到某个IE版本时， WebBrowser控件也会随之升级到相应的Ie对应的渲染引擎。为了保证WebBrowser控件能够正常工作，不同ie版本的WebBrowser控件在默认情况下使用ie7的渲染模式。
 修改ie
